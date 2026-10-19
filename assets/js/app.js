@@ -54,7 +54,7 @@
     b.textContent = dark ? '☀️' : '🌙';
     b.setAttribute('aria-label', dark ? 'Включить светлую тему' : 'Включить тёмную тему');
     const meta = $('meta[name=theme-color]');
-    if (meta) meta.content = dark ? '#0d111e' : '#f5f6fb';
+    if (meta) meta.content = dark ? '#1a1f2e' : '#e9ebf2';
   }
   applyTheme(mem.theme);
   $('#themeBtn').addEventListener('click', () => {

@@ -1,11 +1,11 @@
 /* ============ Токены ============ */
 :root {
-  --bg: #f5f6fb;
-  --surface: #ffffff;
-  --surface-2: #eef0f8;
+  --bg: #e9ebf2;
+  --surface: #f4f5f9;
+  --surface-2: #e2e5ee;
   --text: #171c2c;
   --muted: #566078;
-  --border: #dfe3ef;
+  --border: #cfd4e2;
   --accent: #2f5de0;
   --accent-ink: #ffffff;
   --accent-soft: #e6ecff;
@@ -15,7 +15,7 @@
   --warn-soft: #fff3d9;
   --danger: #b4232f;
   --danger-soft: #fde8ea;
-  --code-bg: #f0f2f9;
+  --code-bg: #e4e7f0;
   --code-ink: #1b2236;
   --tk-kw: #a626a4;
   --tk-str: #0b7a3b;
@@ -36,22 +36,22 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #0d111e;
-    --surface: #151a2b;
-    --surface-2: #1c2338;
-    --text: #e8ecf7;
+    --bg: #1a1f2e;
+    --surface: #232a3d;
+    --surface-2: #2b3349;
+    --text: #dde2f0;
     --muted: #9ba5be;
-    --border: #272f49;
+    --border: #38425e;
     --accent: #8aa9ff;
     --accent-ink: #0b1226;
-    --accent-soft: #1f2a4d;
+    --accent-soft: #2c3a66;
     --ok: #4ade80;
     --ok-soft: #12301f;
     --warn: #fbbf24;
     --warn-soft: #3a2c0c;
     --danger: #ff8a93;
     --danger-soft: #3d1a1f;
-    --code-bg: #0a0e1a;
+    --code-bg: #181d2b;
     --code-ink: #e4e9f7;
     --tk-kw: #d58bff;
     --tk-str: #7ee0a0;
@@ -67,22 +67,22 @@
   }
 }
 :root[data-theme='dark'] {
-  --bg: #0d111e;
-  --surface: #151a2b;
-  --surface-2: #1c2338;
-  --text: #e8ecf7;
+  --bg: #1a1f2e;
+  --surface: #232a3d;
+  --surface-2: #2b3349;
+  --text: #dde2f0;
   --muted: #9ba5be;
-  --border: #272f49;
+  --border: #38425e;
   --accent: #8aa9ff;
   --accent-ink: #0b1226;
-  --accent-soft: #1f2a4d;
+  --accent-soft: #2c3a66;
   --ok: #4ade80;
   --ok-soft: #12301f;
   --warn: #fbbf24;
   --warn-soft: #3a2c0c;
   --danger: #ff8a93;
   --danger-soft: #3d1a1f;
-  --code-bg: #0a0e1a;
+  --code-bg: #181d2b;
   --code-ink: #e4e9f7;
   --tk-kw: #d58bff;
   --tk-str: #7ee0a0;
