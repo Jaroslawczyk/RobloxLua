@@ -384,7 +384,7 @@ button {
 
 .main-wrap {
   padding: 18px 16px 110px;
-  max-width: 880px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 .layout-toc {
@@ -577,14 +577,22 @@ td {
 }
 th {
   background: var(--surface-2);
-  white-space: nowrap;
   font-weight: 650;
 }
 tr:last-child td {
   border-bottom: 0;
 }
 td code {
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+th,
+td {
+  min-width: 90px;
+  overflow-wrap: break-word;
+}
+td:last-child {
+  min-width: 140px;
 }
 
 /* ============ Код ============ */
@@ -1406,8 +1414,8 @@ mark {
     margin: 0;
     max-width: none;
     width: 100%;
-    max-width: 900px;
-    justify-self: center;
+    max-width: 1120px;
+    justify-self: stretch;
   }
   .layout-toc {
     display: block;
@@ -1457,4 +1465,33 @@ mark {
     padding: 0;
     display: block;
   }
+}
+
+/* ---- визуальная глубина (вместо «бумажного» плоского вида) ---- */
+body {
+  background:
+    radial-gradient(900px 420px at 85% -80px, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+    radial-gradient(700px 380px at -10% 10%, color-mix(in srgb, #8b5cf6 12%, transparent), transparent 70%),
+    var(--bg);
+  background-attachment: fixed;
+}
+.table-wrap, .task, .quiz, .panel, .sec-card, .callout, .fold {
+  box-shadow: var(--shadow);
+}
+.table-wrap {
+  border-color: color-mix(in srgb, var(--accent) 18%, var(--border));
+}
+th {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, var(--surface-2)), var(--surface-2));
+  color: var(--text);
+}
+tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--surface-2) 45%, transparent);
+}
+tbody tr:hover td {
+  background: var(--accent-soft);
+}
+.content h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3em;
 }
