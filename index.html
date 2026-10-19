@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Lua и Roblox — справочник и дорожная карта</title>
+    <meta
+      name="description"
+      content="Русскоязычный справочник по Lua/Luau и Roblox: дорожная карта, уроки с заданиями, работа с ИИ, команда, монетизация, калькуляторы, налоги в Польше."
+    />
+    <meta name="theme-color" content="#f5f6fb" />
+    <meta property="og:title" content="Lua и Roblox — справочник и дорожная карта" />
+    <meta property="og:description" content="Уроки Lua, разработка в Roblox Studio, ИИ без лишних токенов, команда, монетизация и налоги." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      /* применяем тему до отрисовки, чтобы не было вспышки */
+      try {
+        var s = JSON.parse(localStorage.getItem('rl.v1') || '{}');
+        if (s.theme) document.documentElement.setAttribute('data-theme', s.theme);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержимому</a>
+
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a class="brand" href="#/" aria-label="На главную">
+        <span class="brand-logo" aria-hidden="true">L</span>
+        <span>Lua&nbsp;·&nbsp;Roblox <small>справочник</small></span>
+      </a>
+      <span class="spacer"></span>
+      <div class="progress-pill" title="Прогресс обучения">
+        <div class="bar"><i id="progBar"></i></div>
+        <a href="#/progress" id="progTxt" style="color:inherit">0%</a>
+      </div>
+      <button class="search-btn" id="searchBtn" type="button" aria-label="Поиск">
+        <span aria-hidden="true">🔎</span><span class="lbl">Поиск</span><kbd>/</kbd>
+      </button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Сменить тему">🌙</button>
+    </header>
+
+    <div class="shell">
+      <aside class="sidebar" id="sidebar" aria-label="Навигация по разделам">
+        <div class="side-head">
+          <strong>Разделы</strong>
+          <button class="icon-btn" id="closeMenu" type="button" aria-label="Закрыть меню">✕</button>
+        </div>
+        <nav id="navList"></nav>
+        <a class="nav-link" href="#/progress" style="margin-top:8px"><span>📈 Мой прогресс</span></a>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+
+      <main class="main-wrap" id="main" tabindex="-1">
+        <noscript><p>Для работы справочника нужен JavaScript.</p></noscript>
+        <article id="content"><p class="lead">Загрузка…</p></article>
+      </main>
+      <aside class="layout-toc" id="toc" aria-label="Содержание страницы"></aside>
+    </div>
+
+    <nav class="tabbar" aria-label="Быстрая навигация">
+      <a class="tab" href="#/" data-go="home"><span aria-hidden="true">🏠</span><span>Главная</span></a>
+      <a class="tab" href="#/roadmap" data-go="roadmap"><span aria-hidden="true">🗺</span><span>Путь</span></a>
+      <a class="tab" href="#/lua-01-start" data-go="lua"><span aria-hidden="true">📘</span><span>Lua</span></a>
+      <a class="tab" href="#/rbx-01-studio" data-go="roblox"><span aria-hidden="true">🧱</span><span>Roblox</span></a>
+      <button class="tab" type="button" data-go="menu"><span aria-hidden="true">☰</span><span>Меню</span></button>
+    </nav>
+
+    <div class="modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Поиск по справочнику">
+      <div class="modal-box">
+        <input id="searchInput" type="search" placeholder="Поиск по всему справочнику…" autocomplete="off" aria-label="Запрос" />
+        <div class="results" id="searchResults"></div>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="assets/js/md.js"></script>
+    <script src="assets/js/api-data.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

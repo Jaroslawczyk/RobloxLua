@@ -1,0 +1,53 @@
+name: Проверка и деплой на GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Сборка индекса и проверка ответов
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Собрать manifest.json и search.json
+        run: npm run build
+      - name: Проверить, что ответы к заданиям проходят тесты
+        run: npm run verify
+      - name: Подготовить папку сайта
+        run: |
+          mkdir -p _site
+          cp -r index.html 404.html favicon.svg .nojekyll assets _site/
+          mkdir -p _site/content
+          cp content/*.md content/manifest.json content/search.json _site/content/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Публикация
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    needs: verify
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

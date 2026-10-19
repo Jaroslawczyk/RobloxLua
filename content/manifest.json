@@ -1,0 +1,652 @@
+{
+ "sections": [
+  {
+   "id": "start",
+   "title": "Старт",
+   "icon": "🗺",
+   "desc": "Дорожная карта от нуля до заработка, словарь терминов и как учиться эффективно.",
+   "track": false
+  },
+  {
+   "id": "lua",
+   "title": "Язык Lua / Luau",
+   "icon": "📘",
+   "desc": "16 уроков: от переменных до метатаблиц, корутин и типов. С заданиями и автопроверкой.",
+   "track": true
+  },
+  {
+   "id": "roblox",
+   "title": "Roblox Studio и API",
+   "icon": "🧱",
+   "desc": "Движок, сервисы, события, клиент-сервер, DataStore, UI, ООП и названия всего важного.",
+   "track": true
+  },
+  {
+   "id": "ai",
+   "title": "ИИ в разработке",
+   "icon": "🤖",
+   "desc": "Какие модели и инструменты брать, как подключить к Studio, как экономить токены и не получать баги.",
+   "track": true
+  },
+  {
+   "id": "team",
+   "title": "Команда и релизы",
+   "icon": "👥",
+   "desc": "Работа вдвоём: Team Create или Git+Rojo, ветки, CI, обновления, доход и права.",
+   "track": true
+  },
+  {
+   "id": "money",
+   "title": "Монетизация и жанры",
+   "icon": "💰",
+   "desc": "Донаты и покупки в коде, жанры-«хиты», экономика, метрики, быстрая сборка проекта.",
+   "track": true
+  },
+  {
+   "id": "biz",
+   "title": "Деньги и налоги (PL)",
+   "icon": "🇵🇱",
+   "desc": "Вывод Robux, JDG, ZUS, ryczałt, IP Box, сроки и что спросить у księgowa.",
+   "track": true
+  },
+  {
+   "id": "tools",
+   "title": "Калькуляторы и справочники",
+   "icon": "🧮",
+   "desc": "Шансы на успех, доход и налоги, поиск по API Roblox, шпаргалки.",
+   "track": false
+  }
+ ],
+ "pages": [
+  {
+   "id": "ai-01-landscape",
+   "file": "ai-01-landscape.md",
+   "section": "ai",
+   "order": 1,
+   "title": "Карта ИИ-инструментов для Roblox-разработки",
+   "summary": "Какие бывают ИИ-помощники (встроенные, редакторы, CLI-агенты, чат-боты, генераторы ассетов) и когда что выбирать.",
+   "time": 20,
+   "level": "Для всех"
+  },
+  {
+   "id": "ai-02-studio-setup",
+   "file": "ai-02-studio-setup.md",
+   "section": "ai",
+   "order": 2,
+   "title": "Как подключить ИИ к Roblox Studio (пошагово)",
+   "summary": "Assistant, Rojo + внешний редактор, MCP-сервер Studio, плагины — установка, структура проекта и безопасные настройки.",
+   "time": 40,
+   "level": "Средний"
+  },
+  {
+   "id": "ai-03-models-by-task",
+   "file": "ai-03-models-by-task.md",
+   "section": "ai",
+   "order": 3,
+   "title": "Какие модели для каких задач (и как их комбинировать)",
+   "summary": "Классы моделей (топ, рабочие, быстрые, локальные), таблица «задача → модель», маршрутизация и связки инструментов.",
+   "time": 25,
+   "level": "Средний"
+  },
+  {
+   "id": "ai-04-token-economy",
+   "file": "ai-04-token-economy.md",
+   "section": "ai",
+   "order": 4,
+   "title": "Экономия токенов: как тратить меньше и получать больше",
+   "summary": "Где утекают токены, как работает контекст и кэш, 15 приёмов экономии, шаблон рабочего дня и расчёт бюджета.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "ai-05-no-errors",
+   "file": "ai-05-no-errors.md",
+   "section": "ai",
+   "order": 5,
+   "title": "Как работать с ИИ без ошибок: процесс, проверки, CI",
+   "summary": "Типичные ошибки ИИ в Roblox, конвейер «ТЗ → код → линтер → тест → ревью», чек-лист безопасности и GitHub Actions.",
+   "time": 35,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "ai-06-prompts",
+   "file": "ai-06-prompts.md",
+   "section": "ai",
+   "order": 6,
+   "title": "Готовые промпты и сценарии для Roblox",
+   "summary": "Шаблоны запросов для модулей, багов, ревью, рефакторинга, тестов, баланса и документации — копируйте и подставляйте своё.",
+   "time": 20,
+   "level": "Средний"
+  },
+  {
+   "id": "ai-07-beyond-code",
+   "file": "ai-07-beyond-code.md",
+   "section": "ai",
+   "order": 7,
+   "title": "ИИ за пределами кода: арт, звук, плагины, автоматизация",
+   "summary": "Как использовать ИИ для 3D, иконок, UI, звука, текстов, плагинов Studio, Open Cloud, аналитики и QA — и не нарушить правила.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "biz-01-payouts",
+   "file": "biz-01-payouts.md",
+   "section": "biz",
+   "order": 1,
+   "title": "От Robux к деньгам: комиссии, DevEx и условия вывода",
+   "summary": "Как Roblox платит разработчикам, как считать доход от Robux до вашего банковского счёта и что проверить перед выводом.",
+   "time": 25,
+   "level": "Для всех"
+  },
+  {
+   "id": "biz-02-poland-taxes",
+   "file": "biz-02-poland-taxes.md",
+   "section": "biz",
+   "order": 2,
+   "title": "Налоги и взносы в Польше для разработчика Roblox",
+   "summary": "Варианты оформления (без JDG, JDG, spółka), ZUS, формы налогообложения, IP Box, сроки и вопросы для księgowa — со сравнением и калькулятором.",
+   "time": 45,
+   "level": "Для всех"
+  },
+  {
+   "id": "biz-03-to-production",
+   "file": "biz-03-to-production.md",
+   "section": "biz",
+   "order": 3,
+   "title": "От прототипа до продакшена и заработка",
+   "summary": "Этапы с критериями перехода, бюджет и сроки, KPI, управление рисками, масштабирование и когда считать проект успешным.",
+   "time": 30,
+   "level": "Для всех"
+  },
+  {
+   "id": "lua-01-start",
+   "file": "lua-01-start.md",
+   "section": "lua",
+   "order": 1,
+   "title": "Что такое Lua и Luau. Первый запуск",
+   "summary": "Откуда взялся язык, чем Luau в Roblox отличается от «чистого» Lua и где запускать код.",
+   "time": 15,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-02-variables",
+   "file": "lua-02-variables.md",
+   "section": "lua",
+   "order": 2,
+   "title": "Переменные и типы данных",
+   "summary": "local и глобальные переменные, nil, числа, строки, логика, таблицы, функции и истинность значений.",
+   "time": 20,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-03-operators",
+   "file": "lua-03-operators.md",
+   "section": "lua",
+   "order": 3,
+   "title": "Числа и операторы",
+   "summary": "Арифметика, приоритеты, сравнения, логические операторы and/or/not, конкатенация и библиотека math.",
+   "time": 20,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-04-strings",
+   "file": "lua-04-strings.md",
+   "section": "lua",
+   "order": 4,
+   "title": "Строки и текст",
+   "summary": "Кавычки, экранирование, методы string, форматирование, поиск по шаблонам и интерполяция Luau.",
+   "time": 25,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-05-conditions",
+   "file": "lua-05-conditions.md",
+   "section": "lua",
+   "order": 5,
+   "title": "Условия и ветвление",
+   "summary": "if / elseif / else, охранные условия, выражение if-then-else в Luau и типичные ловушки.",
+   "time": 15,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-06-loops",
+   "file": "lua-06-loops.md",
+   "section": "lua",
+   "order": 6,
+   "title": "Циклы",
+   "summary": "while, repeat-until, числовой и обобщённый for, break и continue, типичные ошибки.",
+   "time": 20,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-07-functions",
+   "file": "lua-07-functions.md",
+   "section": "lua",
+   "order": 7,
+   "title": "Функции",
+   "summary": "Объявление, параметры, несколько возвращаемых значений, ..., функции как значения, рекурсия.",
+   "time": 25,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-08-tables",
+   "file": "lua-08-tables.md",
+   "section": "lua",
+   "order": 8,
+   "title": "Таблицы: массивы и словари",
+   "summary": "Единственная структура данных Lua: массивы, словари, вложенность, копирование, сортировка, стеки и очереди.",
+   "time": 30,
+   "level": "Новичок"
+  },
+  {
+   "id": "lua-09-scope-closures",
+   "file": "lua-09-scope-closures.md",
+   "section": "lua",
+   "order": 9,
+   "title": "Область видимости и замыкания",
+   "summary": "Где «живёт» переменная, затенение, upvalue, замыкания, фабрики функций и мемоизация.",
+   "time": 20,
+   "level": "Средний"
+  },
+  {
+   "id": "lua-10-metatables-oop",
+   "file": "lua-10-metatables-oop.md",
+   "section": "lua",
+   "order": 10,
+   "title": "Метатаблицы и ООП",
+   "summary": "setmetatable, __index, классы, методы, наследование, перегрузка операторов и шаблон класса для Roblox.",
+   "time": 35,
+   "level": "Средний"
+  },
+  {
+   "id": "lua-11-errors",
+   "file": "lua-11-errors.md",
+   "section": "lua",
+   "order": 11,
+   "title": "Ошибки: error, assert, pcall",
+   "summary": "Как создавать и ловить ошибки, объекты ошибок, повторные попытки, отладочный вывод и защитное программирование.",
+   "time": 25,
+   "level": "Средний"
+  },
+  {
+   "id": "lua-12-coroutines",
+   "file": "lua-12-coroutines.md",
+   "section": "lua",
+   "order": 12,
+   "title": "Корутины и библиотека task",
+   "summary": "Кооперативная многозадачность: coroutine, генераторы, а также task.spawn/defer/delay/wait в Roblox.",
+   "time": 25,
+   "level": "Средний"
+  },
+  {
+   "id": "lua-13-modules",
+   "file": "lua-13-modules.md",
+   "section": "lua",
+   "order": 13,
+   "title": "Модули и организация кода",
+   "summary": "ModuleScript, require, кэширование, циклические зависимости и архитектура проекта.",
+   "time": 20,
+   "level": "Средний"
+  },
+  {
+   "id": "lua-14-luau-types",
+   "file": "lua-14-luau-types.md",
+   "section": "lua",
+   "order": 14,
+   "title": "Luau: типы и строгий режим",
+   "summary": "Аннотации типов, --!strict, union, optional, generics, export type и как это снижает число багов (и ошибок ИИ).",
+   "time": 30,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "lua-15-stdlib",
+   "file": "lua-15-stdlib.md",
+   "section": "lua",
+   "order": 15,
+   "title": "Стандартные библиотеки (шпаргалка)",
+   "summary": "string, table, math, os, utf8, bit32, buffer, coroutine, debug — что есть в Luau и как это использовать.",
+   "time": 25,
+   "level": "Средний"
+  },
+  {
+   "id": "lua-16-style-project",
+   "file": "lua-16-style-project.md",
+   "section": "lua",
+   "order": 16,
+   "title": "Стиль кода, идиомы и итоговый проект",
+   "summary": "Как писать чисто и безопасно, типичные антипаттерны, чек-лист ревью и финальная практика на Lua.",
+   "time": 40,
+   "level": "Средний"
+  },
+  {
+   "id": "money-01-genres",
+   "file": "money-01-genres.md",
+   "section": "money",
+   "order": 1,
+   "title": "Жанры, которые «залетают», и почему",
+   "summary": "Категории игр Roblox с высоким доходом, общие признаки хитов, анатомия цикла и как оценивать нишу.",
+   "time": 30,
+   "level": "Для всех"
+  },
+  {
+   "id": "money-02-economy",
+   "file": "money-02-economy.md",
+   "section": "money",
+   "order": 2,
+   "title": "Экономика игры: источники, стоки и баланс",
+   "summary": "Как проектировать валюты, цены, ребёрты и шансы, считать время до целей и тестировать баланс симуляциями.",
+   "time": 40,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "money-03-monetization-logic",
+   "file": "money-03-monetization-logic.md",
+   "section": "money",
+   "order": 3,
+   "title": "Логика «донатных» игр: как устроено и как делать честнее",
+   "summary": "Разбор механик монетизации (трение, множители, удача, дефицит, социальное давление), их эффект и более честные альтернативы.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "money-04-ethics-compliance",
+   "file": "money-04-ethics-compliance.md",
+   "section": "money",
+   "order": 4,
+   "title": "Правила, законы и безопасность аудитории",
+   "summary": "Платные случайные предметы, раскрытие вероятностей, защита детей, фильтрация, авторские права и чек-лист соответствия.",
+   "time": 25,
+   "level": "Средний"
+  },
+  {
+   "id": "money-05-fast-build",
+   "file": "money-05-fast-build.md",
+   "section": "money",
+   "order": 5,
+   "title": "Как делать игры быстро и дёшево (конвейер + ИИ)",
+   "summary": "Модульный шаблон проекта, MVP за 2–4 недели, распределение работы между человеком и ИИ, бюджет токенов и контроль качества.",
+   "time": 35,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "money-06-growth",
+   "file": "money-06-growth.md",
+   "section": "money",
+   "order": 6,
+   "title": "Продвижение и рост: как игру находят игроки",
+   "summary": "Рекомендательный алгоритм, иконка и название, реклама, стримеры, сообщество, коды, цикл обновлений и метрики роста.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-01-studio",
+   "file": "rbx-01-studio.md",
+   "section": "roblox",
+   "order": 1,
+   "title": "Roblox Studio: установка и первый скрипт",
+   "summary": "Интерфейс Studio, типы скриптов (Script, LocalScript, ModuleScript), где что лежит и первая программа в игре.",
+   "time": 30,
+   "level": "Новичок"
+  },
+  {
+   "id": "rbx-02-datamodel",
+   "file": "rbx-02-datamodel.md",
+   "section": "roblox",
+   "order": 2,
+   "title": "DataModel, Instance и сервисы",
+   "summary": "Иерархия объектов Roblox, Instance.new, поиск, свойства, атрибуты, теги и корректная работа с сервисами.",
+   "time": 30,
+   "level": "Новичок"
+  },
+  {
+   "id": "rbx-03-events",
+   "file": "rbx-03-events.md",
+   "section": "roblox",
+   "order": 3,
+   "title": "События, соединения и RunService",
+   "summary": "Connect/Once/Wait/Disconnect, Touched, Changed, BindableEvent, свои сигналы, Heartbeat и защитные паттерны.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-04-players",
+   "file": "rbx-04-players.md",
+   "section": "roblox",
+   "order": 4,
+   "title": "Игроки, персонаж и Humanoid",
+   "summary": "Players, Player, Character, Humanoid, leaderstats, респавн, команды и работа с жизненным циклом игрока.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-05-client-server",
+   "file": "rbx-05-client-server.md",
+   "section": "roblox",
+   "order": 5,
+   "title": "Клиент и сервер: RemoteEvent и безопасность",
+   "summary": "Как устроена сетевая модель Roblox, RemoteEvent/RemoteFunction, валидация данных, защита от читеров и ограничение частоты.",
+   "time": 40,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-06-datatypes",
+   "file": "rbx-06-datatypes.md",
+   "section": "roblox",
+   "order": 6,
+   "title": "Типы данных Roblox",
+   "summary": "Vector3, CFrame, Color3, UDim2, Enum, TweenInfo, Random, DateTime и другие встроенные типы с примерами.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-07-ui",
+   "file": "rbx-07-ui.md",
+   "section": "roblox",
+   "order": 7,
+   "title": "Интерфейс (GUI) и адаптивность",
+   "summary": "ScreenGui, Frame, TextButton, layout-объекты, Scale против Offset, мобильные экраны и пример магазина.",
+   "time": 35,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-08-tween-anim",
+   "file": "rbx-08-tween-anim.md",
+   "section": "roblox",
+   "order": 8,
+   "title": "Tween, анимации, звук и эффекты",
+   "summary": "TweenService, Animator и AnimationTrack, Sound, частицы, освещение и «сочность» игры.",
+   "time": 25,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-09-physics-raycast",
+   "file": "rbx-09-physics-raycast.md",
+   "section": "roblox",
+   "order": 9,
+   "title": "Физика, Raycast и пространственные запросы",
+   "summary": "Anchored/CanCollide, констрейнты, силы, Raycast, GetPartBoundsInBox, коллизии и PathfindingService.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-10-input",
+   "file": "rbx-10-input.md",
+   "section": "roblox",
+   "order": 10,
+   "title": "Ввод: клавиатура, мышь, касания, геймпад",
+   "summary": "UserInputService, ContextActionService, ProximityPrompt, мобильные кнопки и кроссплатформенное управление.",
+   "time": 20,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-11-datastore",
+   "file": "rbx-11-datastore.md",
+   "section": "roblox",
+   "order": 11,
+   "title": "DataStore: сохранения без потери данных",
+   "summary": "DataStoreService, лимиты, UpdateAsync, session locking, повторные попытки, автосохранение, BindToClose, ProfileStore и лидерборды.",
+   "time": 45,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "rbx-12-monetization-code",
+   "file": "rbx-12-monetization-code.md",
+   "section": "roblox",
+   "order": 12,
+   "title": "Монетизация в коде: покупки, пассы, донаты",
+   "summary": "MarketplaceService, Game Pass, Developer Product, ProcessReceipt, подписки, реализация донатов и топ донатеров.",
+   "time": 40,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "rbx-13-oop-architecture",
+   "file": "rbx-13-oop-architecture.md",
+   "section": "roblox",
+   "order": 13,
+   "title": "ООП и архитектура в Roblox",
+   "summary": "Классы, Signal, Maid/Trove, компоненты через теги, сервисы и контроллеры, состояния и правила именования.",
+   "time": 40,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "rbx-14-optimization-debug",
+   "file": "rbx-14-optimization-debug.md",
+   "section": "roblox",
+   "order": 14,
+   "title": "Оптимизация и отладка",
+   "summary": "MicroProfiler, Script Profiler, память, StreamingEnabled, объектные пулы, сеть и частые источники лагов.",
+   "time": 30,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "rbx-15-publish-live",
+   "file": "rbx-15-publish-live.md",
+   "section": "roblox",
+   "order": 15,
+   "title": "Публикация, настройки и live-операции",
+   "summary": "Publish, настройки Experience, возрастные рейтинги, обновления без простоя, аналитика, Open Cloud и безопасность аккаунта.",
+   "time": 30,
+   "level": "Средний"
+  },
+  {
+   "id": "rbx-16-class-map",
+   "file": "rbx-16-class-map.md",
+   "section": "roblox",
+   "order": 16,
+   "title": "Карта классов и сервисов Roblox",
+   "summary": "Иерархия классов, список важнейших сервисов и классов по задачам — чтобы знать, «что искать» в документации.",
+   "time": 20,
+   "level": "Средний"
+  },
+  {
+   "id": "roadmap",
+   "file": "roadmap.md",
+   "section": "start",
+   "order": 1,
+   "title": "Дорожная карта: от нуля до заработка",
+   "summary": "Полный маршрут по этапам с ориентировочными сроками, критериями перехода и ссылками на материалы. Отмечайте пункты галочками.",
+   "time": 15,
+   "level": "Для всех"
+  },
+  {
+   "id": "start-glossary",
+   "file": "start-glossary.md",
+   "section": "start",
+   "order": 3,
+   "title": "Словарь терминов",
+   "summary": "Ключевые термины Lua, Roblox, ИИ-разработки, монетизации и налогов — коротко и по делу.",
+   "time": 15,
+   "level": "Для всех"
+  },
+  {
+   "id": "start-learning-guide",
+   "file": "start-learning-guide.md",
+   "section": "start",
+   "order": 2,
+   "title": "Как учиться эффективно (с ИИ и без)",
+   "summary": "Метод обучения программированию: практика, ошибки, повторение, правила работы с ИИ-тьютором и источники помощи.",
+   "time": 15,
+   "level": "Для всех"
+  },
+  {
+   "id": "team-01-workflow",
+   "file": "team-01-workflow.md",
+   "section": "team",
+   "order": 1,
+   "title": "Работа вдвоём: роли, ритм, договорённости",
+   "summary": "Как выглядит день и неделя команды из двух человек, кто за что отвечает, как планировать и не мешать друг другу.",
+   "time": 25,
+   "level": "Для всех"
+  },
+  {
+   "id": "team-02-git-rojo-teamcreate",
+   "file": "team-02-git-rojo-teamcreate.md",
+   "section": "team",
+   "order": 2,
+   "title": "Git + Rojo и Team Create: как делиться работой",
+   "summary": "Три модели совместной работы, ветки и PR, как решать конфликты, как обновления попадают в игру и что делать со сценой.",
+   "time": 35,
+   "level": "Средний"
+  },
+  {
+   "id": "team-03-ci-cd",
+   "file": "team-03-ci-cd.md",
+   "section": "team",
+   "order": 3,
+   "title": "CI/CD: автопроверки и публикация через Open Cloud",
+   "summary": "GitHub Actions для проверок, окружения Dev/Prod, публикация плейса по API, версионирование, откат и мониторинг.",
+   "time": 30,
+   "level": "Продвинутый"
+  },
+  {
+   "id": "team-04-money-rights",
+   "file": "team-04-money-rights.md",
+   "section": "team",
+   "order": 4,
+   "title": "Доход, права и договорённости в команде",
+   "summary": "Группа Roblox, роли и доли, как делить выручку, что прописать в соглашении, IP и что делать, если кто-то уходит.",
+   "time": 25,
+   "level": "Для всех"
+  },
+  {
+   "id": "tools-api",
+   "file": "tools-api.md",
+   "section": "tools",
+   "order": 3,
+   "title": "Справочник API Roblox и Luau (поиск)",
+   "summary": "Поиск по самым нужным классам, методам, свойствам, событиям, сервисам и функциям Luau с описаниями и пометками об устаревшем.",
+   "time": 10,
+   "level": "Для всех"
+  },
+  {
+   "id": "tools-cheatsheet",
+   "file": "tools-cheatsheet.md",
+   "section": "tools",
+   "order": 4,
+   "title": "Шпаргалка по Luau (синтаксис на одной странице)",
+   "summary": "Компактная сводка синтаксиса Lua/Luau: переменные, операторы, управление потоком, функции, таблицы, ООП, ошибки, типы.",
+   "time": 10,
+   "level": "Для всех"
+  },
+  {
+   "id": "tools-income-calc",
+   "file": "tools-income-calc.md",
+   "section": "tools",
+   "order": 2,
+   "title": "Калькулятор дохода и налогов (Польша)",
+   "summary": "От CCU и конверсии до Robux, DevEx, злотых, ZUS и PIT — сравнение режимов ryczałt / liniowy / skala / IP Box.",
+   "time": 15,
+   "level": "Для всех"
+  },
+  {
+   "id": "tools-success-calc",
+   "file": "tools-success-calc.md",
+   "section": "tools",
+   "order": 1,
+   "title": "Калькулятор шансов на успех",
+   "summary": "Оцените вероятность выйти на 100 / 1 000 / 10 000 одновременных игроков по качеству цикла, времени, аудитории и бюджету.",
+   "time": 10,
+   "level": "Для всех"
+  }
+ ]
+}

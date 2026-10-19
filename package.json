@@ -1,0 +1,16 @@
+{
+  "name": "roblox-lua-reference",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Справочник по Lua/Luau и Roblox: уроки, задания, калькуляторы. Статический сайт для GitHub Pages.",
+  "scripts": {
+    "build": "node tools/build.js",
+    "verify": "node tools/verify.js",
+    "check": "node tools/build.js && node tools/verify.js",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "fengari": "^0.1.4"
+  },
+  "license": "MIT"
+}
