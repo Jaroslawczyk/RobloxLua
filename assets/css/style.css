@@ -1495,3 +1495,16 @@ tbody tr:hover td {
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.3em;
 }
+
+/* таблица не должна выталкивать колонку контента */
+.main-wrap, .content, .component { min-width: 0; }
+.table-wrap { max-width: 100%; }
+.api-table table { table-layout: fixed; width: 100%; }
+.api-table th:nth-child(1) { width: 17%; }
+.api-table th:nth-child(2) { width: 30%; }
+.api-table th:nth-child(3) { width: 11%; }
+.api-table th:nth-child(4) { width: 42%; }
+.api-table td, .api-table th { min-width: 0; }
+@media (max-width: 700px) {
+  .api-table table { table-layout: auto; min-width: 640px; }
+}

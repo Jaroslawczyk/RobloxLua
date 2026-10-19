@@ -341,7 +341,7 @@
         <select id="api-kind" aria-label="Тип"><option value="">Все типы</option>${kinds.map((c) => `<option>${c}</option>`).join('')}</select>
       </div>
       <div class="hint" id="api-count"></div>
-      <div class="table-wrap"><table><thead><tr><th>Класс / группа</th><th>Имя</th><th>Тип</th><th>Описание</th></tr></thead><tbody id="api-body"></tbody></table></div>
+      <div class="table-wrap api-table"><table><thead><tr><th>Класс / группа</th><th>Имя</th><th>Тип</th><th>Описание</th></tr></thead><tbody id="api-body"></tbody></table></div>
       <p class="hint">Это курируемая шпаргалка самых нужных членов API. Полный справочник: <a href="https://create.roblox.com/docs/reference/engine" target="_blank" rel="noopener noreferrer">Engine API Reference</a>.</p>`;
     const body = $('#api-body', el);
     const esc = ctx.esc;
